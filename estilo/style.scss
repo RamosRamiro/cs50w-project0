@@ -2,7 +2,7 @@
 
 $Color: black;
 $segundocolor: #BB8FCE;
-
+$blanco:#F6DDCC;
 
 
 
@@ -10,15 +10,21 @@ $segundocolor: #BB8FCE;
     text-align: center;
      color: $Color;
      font-size: 25px;
-     background-color: #F6DDCC;
+     background: {
+         color: $blanco;
+     }
      
   }
-   .fondolol{
+   %fondolol{
 
    background-image: url(/estilo/img/lol.jpg);
    padding-top: 5%;
    padding-bottom: 4%;
    
+   }
+   .fondolol
+   {
+       @extend %fondolol;
    }
  
   
@@ -44,7 +50,7 @@ $segundocolor: #BB8FCE;
 
  .herencia{
   
-    @extend .fondolol;
+    @extend %fondolol;
     padding-top: 0%;
  }
  .segundalol{

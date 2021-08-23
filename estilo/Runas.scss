@@ -13,8 +13,10 @@
   padding: 2%;
   text-align:justify;
   color:black;
-  font-size: 30px;
-  font-family: 'Source Sans Pro', sans-serif;;
+  font: {
+      family: 'Source Sans Pro', sans-serif;
+      size:30px;
+  }
 
 }
 .mundial
@@ -27,13 +29,17 @@
     padding: 5%;
     width: 400;
 }
-.fodo
+%fodo
 {
     background-color: #F6DDCC;
 }
+.fodo
+{
+    @extend %fodo;
+}
 #fodo2
 {
-    background-color: #F6DDCC;
+    @extend %fodo;
 }
 .img
 {

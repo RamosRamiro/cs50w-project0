@@ -9,8 +9,8 @@
   padding: 2%;
   text-align: justify;
   color: black;
-  font-size: 30px;
   font-family: 'Source Sans Pro', sans-serif;
+  font-size: 30px;
 }
 
 .mundial {
@@ -23,11 +23,7 @@
   width: 400;
 }
 
-.fodo {
-  background-color: #F6DDCC;
-}
-
-#fodo2 {
+.fodo, #fodo2 {
   background-color: #F6DDCC;
 }
 
